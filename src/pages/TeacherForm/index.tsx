@@ -8,7 +8,7 @@ import Input from '../../components/Input';
 import warningIcon from '../../assets/images/icons/warning.svg';
 import Select from '../../components/Select';
 import api from '../../services/api';
-import Textarea from '../../components/TextArea';
+import TextArea from '../../components/TextArea';
 
 function TeacherForm() {
   const history = useHistory();
@@ -97,7 +97,7 @@ function TeacherForm() {
               value={whatsapp}
               onChange={(e) => { setWhatsapp(e.target.value) }} />
 
-            <Textarea name="bio" label="Biografia"
+            <TextArea name="bio" label="Biografia"
               value={bio}
               onChange={(e) => { setBio(e.target.value) }} />
           </fieldset>
